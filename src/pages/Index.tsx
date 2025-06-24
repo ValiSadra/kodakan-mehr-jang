@@ -2,7 +2,7 @@
 import Navigation from '../components/Navigation';
 import HeroSection from '../components/HeroSection';
 import SectionCard from '../components/SectionCard';
-import { Book, Video, Headphones, Gamepad, Heart, Shield, Users, Mail, Phone, MapPin } from 'lucide-react';
+import { Book, Video, Headphones, Gamepad, Heart, Shield, Users, Mail, Phone, MapPin, MessageCircle, Building2 } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -48,6 +48,62 @@ const Index = () => {
               icon={<Gamepad size={48} />}
               link="/games"
               gradient="bg-gradient-to-br from-orange-500 to-orange-700"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* New Expert Consultation Section */}
+      <section className="py-20 bg-gradient-to-br from-green-50 to-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">مشاوره با متخصصان</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">ارتباط مستقیم با روانشناسان و متخصصان سلامت روان کودکان</p>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2">
+            <SectionCard
+              title="مشاوره آنلاین"
+              description="جلسات مشاوره آنلاین با متخصصان مجرب سلامت روان کودکان"
+              icon={<MessageCircle size={48} />}
+              link="/consultation"
+              gradient="bg-gradient-to-br from-teal-500 to-teal-700"
+            />
+            
+            <SectionCard
+              title="مشاوره اورژانسی"
+              description="دسترسی ۲۴ ساعته به متخصصان برای مواقع بحرانی و فوری"
+              icon={<Phone size={48} />}
+              link="/emergency"
+              gradient="bg-gradient-to-br from-red-500 to-red-700"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* New Corporate Services Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">خدمات سازمانی</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">خدمات تخصصی شرکت‌ها و نهادها برای حمایت از سلامت روان کودکان</p>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2">
+            <SectionCard
+              title="خدمات شرکت‌ها"
+              description="برنامه‌های حمایتی شرکت‌ها و سازمان‌ها برای کودکان کارکنان"
+              icon={<Building2 size={48} />}
+              link="/corporate"
+              gradient="bg-gradient-to-br from-indigo-500 to-indigo-700"
+            />
+            
+            <SectionCard
+              title="برنامه‌های خیریه"
+              description="کمک‌های مالی و خدمات رایگان برای خانواده‌های نیازمند"
+              icon={<Heart size={48} />}
+              link="/charity"
+              gradient="bg-gradient-to-br from-rose-500 to-rose-700"
             />
           </div>
         </div>
