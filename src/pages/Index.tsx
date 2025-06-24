@@ -1,12 +1,9 @@
-
 import Navigation from '../components/Navigation';
 import HeroSection from '../components/HeroSection';
 import SectionCard from '../components/SectionCard';
 import { Book, Video, Headphones, Gamepad, Heart, Shield, Users, Mail, Phone, MapPin, MessageCircle, Building2 } from 'lucide-react';
-
 const Index = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navigation />
       <HeroSection />
       
@@ -18,37 +15,13 @@ const Index = () => {
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            <SectionCard
-              title="مقالات"
-              description="مطالب تخصصی و راهنمایی‌های کاربردی نوشته شده توسط متخصصان"
-              icon={<Book size={48} />}
-              link="/articles"
-              gradient="bg-gradient-to-br from-blue-500 to-blue-700"
-            />
+            <SectionCard title="مقالات" description="مطالب تخصصی و راهنمایی‌های کاربردی نوشته شده توسط متخصصان" icon={<Book size={48} />} link="/articles" gradient="bg-gradient-to-br from-blue-500 to-blue-700" />
             
-            <SectionCard
-              title="پادکست‌ها"
-              description="گفت‌وگوهای صوتی با متخصصان و تجربیات مفید"
-              icon={<Headphones size={48} />}
-              link="/podcasts"
-              gradient="bg-gradient-to-br from-green-500 to-green-700"
-            />
+            <SectionCard title="پادکست‌ها" description="گفت‌وگوهای صوتی با متخصصان و تجربیات مفید" icon={<Headphones size={48} />} link="/podcasts" gradient="bg-gradient-to-br from-green-500 to-green-700" />
             
-            <SectionCard
-              title="ویدئوها"
-              description="آموزش‌های تصویری و تکنیک‌های عملی"
-              icon={<Video size={48} />}
-              link="/videos"
-              gradient="bg-gradient-to-br from-purple-500 to-purple-700"
-            />
+            <SectionCard title="ویدئوها" description="آموزش‌های تصویری و تکنیک‌های عملی" icon={<Video size={48} />} link="/videos" gradient="bg-gradient-to-br from-purple-500 to-purple-700" />
             
-            <SectionCard
-              title="بازی‌ها"
-              description="بازی‌های آموزشی تعاملی برای کودکان"
-              icon={<Gamepad size={48} />}
-              link="/games"
-              gradient="bg-gradient-to-br from-orange-500 to-orange-700"
-            />
+            <SectionCard title="بازی‌ها" description="بازی‌های آموزشی تعاملی برای کودکان" icon={<Gamepad size={48} />} link="/games" gradient="bg-gradient-to-br from-orange-500 to-orange-700" />
           </div>
         </div>
       </section>
@@ -62,21 +35,9 @@ const Index = () => {
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
-            <SectionCard
-              title="مشاوره آنلاین"
-              description="جلسات مشاوره آنلاین با متخصصان مجرب سلامت روان کودکان"
-              icon={<MessageCircle size={48} />}
-              link="/consultation"
-              gradient="bg-gradient-to-br from-teal-500 to-teal-700"
-            />
+            <SectionCard title="مشاوره آنلاین" description="جلسات مشاوره آنلاین با متخصصان مجرب سلامت روان کودکان" icon={<MessageCircle size={48} />} link="/consultation" gradient="bg-gradient-to-br from-teal-500 to-teal-700" />
             
-            <SectionCard
-              title="مشاوره اورژانسی"
-              description="دسترسی ۲۴ ساعته به متخصصان برای مواقع بحرانی و فوری"
-              icon={<Phone size={48} />}
-              link="/emergency"
-              gradient="bg-gradient-to-br from-red-500 to-red-700"
-            />
+            <SectionCard title="مشاوره اورژانسی" description="دسترسی ۲۴ ساعته به متخصصان برای مواقع بحرانی و فوری" icon={<Phone size={48} />} link="/emergency" gradient="bg-gradient-to-br from-red-500 to-red-700" />
           </div>
         </div>
       </section>
@@ -90,21 +51,9 @@ const Index = () => {
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
-            <SectionCard
-              title="خدمات شرکت‌ها"
-              description="برنامه‌های حمایتی شرکت‌ها و سازمان‌ها برای کودکان کارکنان"
-              icon={<Building2 size={48} />}
-              link="/corporate"
-              gradient="bg-gradient-to-br from-indigo-500 to-indigo-700"
-            />
+            <SectionCard title="خدمات شرکت‌ها" description="برنامه‌های حمایتی شرکت‌ها و سازمان‌ها برای کودکان کارکنان" icon={<Building2 size={48} />} link="/corporate" gradient="bg-gradient-to-br from-indigo-500 to-indigo-700" />
             
-            <SectionCard
-              title="برنامه‌های خیریه"
-              description="کمک‌های مالی و خدمات رایگان برای خانواده‌های نیازمند"
-              icon={<Heart size={48} />}
-              link="/charity"
-              gradient="bg-gradient-to-br from-rose-500 to-rose-700"
-            />
+            <SectionCard title="برنامه‌های خیریه" description="کمک‌های مالی و خدمات رایگان برای خانواده‌های نیازمند" icon={<Heart size={48} />} link="/charity" gradient="bg-gradient-to-br from-rose-500 to-rose-700" />
           </div>
         </div>
       </section>
@@ -113,13 +62,8 @@ const Index = () => {
       <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-              هدف از ایجاد این وبسایت
-            </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              این پلتفرم با هدف گردآوری و سازماندهی بهترین منابع آموزشی در زمینه سلامت روان کودکان در شرایط بحران طراحی شده است. 
-              ما بر آن هستیم تا والدین، مربیان، و متخصصان را با ابزارها و دانش لازم برای حمایت از کودکان در مواقع دشوار مجهز کنیم.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">درباره ما</h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">این پلتفرم که به عنوان بخش مسئولیت اجتماعی شرکت داروسازی الحاوی تأسیس شده است، با هدف گردآوری و سازماندهی بهترین منابع آموزشی در زمینه سلامت روان کودکان در شرایط بحرانی طراحی شده است. ما بر آن هستیم تا والدین، مربیان، و متخصصان را با ابزارها و دانش لازم برای حمایت از کودکان در مواقع دشوار مجهز کنیم.</p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
@@ -220,8 +164,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
