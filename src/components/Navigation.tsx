@@ -27,7 +27,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-500 bg-clip-text text-transparent">کودکان و بحران</Link>
+            <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-500 bg-clip-text text-transparent">سلامت روان کودکان و بحران ها</Link>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4 space-x-reverse">
