@@ -1,15 +1,9 @@
-
 const HeroSection = () => {
-  return (
-    <div className="relative bg-gradient-to-br from-blue-50 via-white to-green-50 py-16">
+  return <div className="relative bg-gradient-to-br from-blue-50 via-white to-green-50 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            سلامت کودکان در زمان جنگ
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            بهترین منابع آموزشی و راهنمایی‌های تخصصی از نهادهای معتبر برای حفظ سلامت روحی و جسمی کودکان
-          </p>
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">سلامت روان کودکان در هنگام بحران ها</h1>
+          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">بهترین منابع آموزشی و راهنمایی‌های تخصصی از نهادهای معتبر در راستای حفظ و ارتقا سلامت روانی کودکان در هنگام بحران ها</p>
           
           {/* Age Group Selection */}
           <div className="bg-white rounded-2xl shadow-lg p-6 max-w-4xl mx-auto">
@@ -39,8 +33,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default HeroSection;
