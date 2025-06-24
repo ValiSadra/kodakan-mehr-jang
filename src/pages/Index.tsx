@@ -1,58 +1,171 @@
+
 import Navigation from '../components/Navigation';
 import HeroSection from '../components/HeroSection';
 import SectionCard from '../components/SectionCard';
-import { Book, Video, Headphones, Gamepad } from 'lucide-react';
+import { Book, Video, Headphones, Gamepad, Heart, Shield, Users, Mail, Phone, MapPin } from 'lucide-react';
+
 const Index = () => {
-  return <div className="min-h-screen">
+  return (
+    <div className="min-h-screen">
       <Navigation />
       <HeroSection />
       
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">منابع آموزشی </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">مجموعه‌ای جامع از محتواهای آموزشی معتبر داخلی و بین المللی </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">منابع آموزشی</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">مجموعه‌ای جامع از محتواهای آموزشی معتبر داخلی و بین المللی</p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            <SectionCard title="مقالات" description="مطالب تخصصی و راهنمایی‌های کاربردی نوشته شده توسط متخصصان" icon={<Book size={48} />} link="/articles" gradient="bg-gradient-to-br from-blue-500 to-blue-700" />
+            <SectionCard
+              title="مقالات"
+              description="مطالب تخصصی و راهنمایی‌های کاربردی نوشته شده توسط متخصصان"
+              icon={<Book size={48} />}
+              link="/articles"
+              gradient="bg-gradient-to-br from-blue-500 to-blue-700"
+            />
             
-            <SectionCard title="پادکست‌ها" description="گفت‌وگوهای صوتی با متخصصان و تجربیات مفید" icon={<Headphones size={48} />} link="/podcasts" gradient="bg-gradient-to-br from-green-500 to-green-700" />
+            <SectionCard
+              title="پادکست‌ها"
+              description="گفت‌وگوهای صوتی با متخصصان و تجربیات مفید"
+              icon={<Headphones size={48} />}
+              link="/podcasts"
+              gradient="bg-gradient-to-br from-green-500 to-green-700"
+            />
             
-            <SectionCard title="ویدئوها" description="آموزش‌های تصویری و تکنیک‌های عملی" icon={<Video size={48} />} link="/videos" gradient="bg-gradient-to-br from-purple-500 to-purple-700" />
+            <SectionCard
+              title="ویدئوها"
+              description="آموزش‌های تصویری و تکنیک‌های عملی"
+              icon={<Video size={48} />}
+              link="/videos"
+              gradient="bg-gradient-to-br from-purple-500 to-purple-700"
+            />
             
-            <SectionCard title="بازی‌ها" description="بازی‌های آموزشی تعاملی برای کودکان" icon={<Gamepad size={48} />} link="/games" gradient="bg-gradient-to-br from-orange-500 to-orange-700" />
+            <SectionCard
+              title="بازی‌ها"
+              description="بازی‌های آموزشی تعاملی برای کودکان"
+              icon={<Gamepad size={48} />}
+              link="/games"
+              gradient="bg-gradient-to-br from-orange-500 to-orange-700"
+            />
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-green-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-            چرا سلامت کودکان مهم است؟
-          </h2>
+      {/* About Website Purpose Section */}
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+              هدف از ایجاد این وبسایت
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              این پلتفرم با هدف گردآوری و سازماندهی بهترین منابع آموزشی در زمینه سلامت روان کودکان در شرایط بحران طراحی شده است. 
+              ما بر آن هستیم تا والدین، مربیان، و متخصصان را با ابزارها و دانش لازم برای حمایت از کودکان در مواقع دشوار مجهز کنیم.
+            </p>
+          </div>
+
           <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
-            <div className="bg-white p-6 rounded-xl shadow-lg">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">حمایت روانی</h3>
-              <p className="text-gray-600">
-                کودکان در شرایط بحران نیاز به حمایت ویژه دارند تا بتوانند با آسیب‌های روانی مقابله کنند
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center">
+                <Heart className="text-white" size={32} />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">حمایت جامع</h3>
+              <p className="text-gray-600 text-center leading-relaxed">
+                ارائه منابع کامل و متنوع برای پشتیبانی همه‌جانبه از کودکان در مواقع بحران
               </p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">آینده بهتر</h3>
-              <p className="text-gray-600">
-                سرمایه‌گذاری در سلامت کودکان امروز، آینده‌ای بهتر برای جامعه فردا ایجاد می‌کند
+
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center">
+                <Shield className="text-white" size={32} />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">محتوای معتبر</h3>
+              <p className="text-gray-600 text-center leading-relaxed">
+                تمام منابع توسط متخصصان بررسی و از نهادهای معتبر بین‌المللی گردآوری شده‌اند
               </p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">تاب‌آوری</h3>
-              <p className="text-gray-600">
-                آموزش مهارت‌های مقابله‌ای به کودکان کمک می‌کند تا در برابر چالش‌ها مقاوم‌تر باشند
+
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center">
+                <Users className="text-white" size={32} />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">دسترسی آسان</h3>
+              <p className="text-gray-600 text-center leading-relaxed">
+                طراحی ساده و کاربرپسند برای دسترسی آسان والدین و مربیان به اطلاعات مورد نیاز
               </p>
             </div>
           </div>
         </div>
       </section>
-    </div>;
+
+      {/* Professional Footer */}
+      <footer className="bg-gray-900 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="grid gap-8 md:grid-cols-4">
+            {/* Website Info */}
+            <div className="md:col-span-2">
+              <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
+                سلامت روان کودکان و بحران‌ها
+              </h3>
+              <p className="text-gray-300 leading-relaxed mb-6">
+                مرجع جامع منابع آموزشی برای حفظ و ارتقای سلامت روانی کودکان در شرایط بحران. 
+                ما متعهد به ارائه بهترین و معتبرترین اطلاعات برای حمایت از کودکان هستیم.
+              </p>
+              <div className="flex space-x-4 space-x-reverse">
+                <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors cursor-pointer">
+                  <span className="text-white font-bold">f</span>
+                </div>
+                <div className="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors cursor-pointer">
+                  <span className="text-white font-bold">t</span>
+                </div>
+                <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors cursor-pointer">
+                  <span className="text-white font-bold">@</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h4 className="text-lg font-bold mb-4">دسترسی سریع</h4>
+              <ul className="space-y-2">
+                <li><a href="/articles" className="text-gray-300 hover:text-white transition-colors">مقالات</a></li>
+                <li><a href="/videos" className="text-gray-300 hover:text-white transition-colors">ویدئوها</a></li>
+                <li><a href="/podcasts" className="text-gray-300 hover:text-white transition-colors">پادکست‌ها</a></li>
+                <li><a href="/games" className="text-gray-300 hover:text-white transition-colors">بازی‌ها</a></li>
+              </ul>
+            </div>
+
+            {/* Contact Info */}
+            <div>
+              <h4 className="text-lg font-bold mb-4">تماس با ما</h4>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <Mail size={18} className="text-blue-400" />
+                  <span className="text-gray-300">info@childmentalhealth.ir</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Phone size={18} className="text-green-400" />
+                  <span className="text-gray-300">۰۲۱-۱۲۳۴۵۶۷۸</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <MapPin size={18} className="text-red-400" />
+                  <span className="text-gray-300">تهران، ایران</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-700 mt-12 pt-8 text-center">
+            <p className="text-gray-400">
+              © ۱۴۰۳ سلامت روان کودکان و بحران‌ها. تمامی حقوق محفوظ است.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
 };
+
 export default Index;
