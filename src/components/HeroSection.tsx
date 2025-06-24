@@ -1,4 +1,3 @@
-
 const HeroSection = () => {
   return <div className="relative bg-gradient-to-br from-blue-600 via-purple-600 to-green-600 py-20">
       {/* Background Pattern */}
@@ -8,7 +7,7 @@ const HeroSection = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">سلامت روان کودکان در هنگام بحران ها</h1>
-          <p className="text-xl md:text-2xl text-white mb-12 max-w-3xl mx-auto drop-shadow-md opacity-90">بهترین منابع آموزشی و راهنمایی‌های تخصصی از نهادهای معتبر در راستای حفظ و ارتقا سلامت روانی کودکان در هنگام بحران ها</p>
+          <p className="text-xl md:text-2xl text-white mb-12 max-w-3xl mx-auto drop-shadow-md opacity-90">بهترین منابع آموزشی و راهنمایی‌های تخصصی منتشر شده توسط نهادهای معتبر در راستای حفظ و ارتقا سلامت روانی کودکان در هنگام بحران ها</p>
           
           {/* Age Group Selection */}
           <div className="bg-white bg-opacity-95 backdrop-blur-sm rounded-3xl shadow-2xl p-8 max-w-4xl mx-auto border border-white border-opacity-20">
@@ -63,5 +62,4 @@ const HeroSection = () => {
       </div>
     </div>;
 };
-
 export default HeroSection;
